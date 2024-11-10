@@ -1,0 +1,2 @@
+# Raspberry-Pi-Pico-as-a-Rubber-Ducky-A-Stealthy-Netcat-Reverse-Shell
+Discover how to transform a Raspberry Pi Pico into a powerful, stealthy hacking tool. This guide explores the process of turning your Pico into a USB Rubber Ducky, capable of executing malicious scripts undetected. By combining the Pico's versatility with the potent capabilities of Netcat, you'll learn to establish covert reverse shells,
